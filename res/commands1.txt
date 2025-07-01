@@ -1,0 +1,124 @@
+load manhattan.jpg jpg
+load manhattan.png png
+load manhattan.bmp bmp
+load manhattan.ppm ppm
+
+blue-component jpg blue-jpg
+blue-component png blue-png
+blue-component bmp blue-bmp
+blue-component bmp blue-ppm
+
+brighten jpg bright-jpg 100
+brighten png bright-png 100
+brighten bmp bright-bmp 100
+brighten ppm bright-ppm 100
+
+greyscale jpg greyscale-jpg
+greyscale png greyscale-png
+greyscale bmp greyscale-bmp
+greyscale ppm greyscale-ppm
+
+sepia jpg sepia-jpg
+sepia png sepia-png
+sepia bmp sepia-bmp
+sepia ppm sepia-ppm
+
+darken jpg dark-jpg 100
+darken png dark-png 100
+darken bmp dark-bmp 100
+darken ppm dark-ppm 100
+
+flip-horizontal jpg horizontal-jpg
+flip-horizontal png horizontal-png
+flip-horizontal bmp horizontal-bmp
+flip-horizontal ppm horizontal-ppm
+
+flip-vertical jpg vertical-jpg
+flip-vertical png vertical-png
+flip-vertical bmp vertical-bmp
+flip-vertical ppm vertical-ppm
+
+blur jpg blur-jpg
+blur png blur-png
+blur bmp blur-bmp
+blur ppm blur-ppm
+
+sharpen jpg sharp-jpg
+sharpen png sharp-png
+sharpen bmp sharp-bmp
+sharpen ppm sharp-ppm
+
+green-component jpg green-jpg
+green-component png green-png
+green-component bmp green-bmp
+green-component ppm green-ppm
+
+intensity-component jpg intensity-jpg
+intensity-component png intensity-png
+intensity-component bmp intensity-bmp
+intensity-component ppm intensity-ppm
+
+luma-component jpg luma-jpg
+luma-component png luma-png
+luma-component bmp luma-bmp
+luma-component ppm luma-ppm
+
+red-component jpg red-jpg
+red-component png red-png
+red-component bmp red-bmp
+red-component ppm red-ppm
+
+value-component jpg value-jpg
+value-component png value-png
+value-component bmp value-bmp
+value-component ppm value-ppm
+
+save commands1-images/ppm.ppm ppm
+save commands1-images/ppm.jpg ppm
+save commands1-images/ppm.png ppm
+save commands1-images/ppm.bmp ppm
+
+save commands1-images/png.png png
+save commands1-images/png.jpg png
+save commands1-images/png.bmp png
+save commands1-images/png.ppm png
+
+save commands1-images/jpg.png jpg
+save commands1-images/jpg.jpg jpg
+save commands1-images/jpg.bmp jpg
+save commands1-images/jpg.ppm jpg
+
+save commands1-images/bmp.bmp bmp
+save commands1-images/bmp.png bmp
+save commands1-images/bmp.jpg bmp
+save commands1-images/bmp.ppm bmp
+
+save commands1-images/blue.png blue-png
+
+save commands1-images/brighten.png bright-png
+
+save commands1-images/grey.png greyscale-png
+
+save commands1-images/sepia.png sepia-png
+
+save commands1-images/darken.png dark-png
+
+save commands1-images/horizontal.png horizontal-png
+
+save commands1-images/vertical.png vertical-png
+
+save commands1-images/blur.png blur-png
+
+save commands1-images/sharpen.png sharp-png
+
+save commands1-images/green.png green-png
+
+save commands1-images/intensity.png intensity-png
+
+save commands1-images/luma.png luma-png
+
+save commands1-images/red.png red-png
+
+save commands1-images/value.png value-png
+
+q

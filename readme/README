@@ -1,0 +1,53 @@
+Changes and Notes (HWK 05->06):
+ • Everything is complete and fully funcitoning
+ • No extra credit was attempted
+ • We opted for new interfaces for the GUI
+  • Done to support all the new functionality that the GUI requires
+    in the controller and view
+  • GUI Controller is independent of GUI library used for view
+
+
+Changes (HWK 04->05):
+ • A change we made in our design was adjusting the alpha channel's minimum and maximum value.
+ • Before we used a double in the range [0,1].
+ • Now we use an int in the range [0, 255] where 255 is opaque.
+ • This was done to allow for more precision and have similar behavior to alpha channels elsewhere.
+
+
+~OUR DESIGN~
+
+We separated our functionality, screen output, and user input into an MVC design.
+
+MODEL:
+• Image Processing Application is the controller. 
+• Reasoning: IPA is controlling all the information about our images. 
+  - Stores named images
+  - Access Images
+  - Modify Images
+  - Add Images
+
+VIEW:
+• Text Format
+• Render Message
+• Render Names in the Program (for convenience)
+
+
+CONTROLLER:
+• Uses Model Commands
+• Command Design Pattern -> Scalability
+• New Command To Support -> Minimal Changes
+• Can be very abstract when doing Filters, Kernels, and Transformations
+
+
+IMAGES AND PIXELS:
+• Image has Pixels
+• Pixels represent actual pixels
+• Used to store image data
+• ImageAdapt uses ImageIO class (adapter pattern)
+
+
+CITATIONS:
+
+AskDifference Team. “Manhattan Skyline at Sunset.” AskDifference, 30 Aug. 2021, https://www.askdifference.com/horizon-vs-skyline/. Accessed 16 June 2022.
+
+Ahkâm. “Evil Minions PNG Transparent Background.” Free Icons PNG, https://www.freeiconspng.com/img/42200. Accessed 23 June 2022.  

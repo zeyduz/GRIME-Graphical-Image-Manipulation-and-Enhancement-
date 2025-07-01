@@ -1,0 +1,150 @@
+~HOW TO USE OUR PROGRAM~
+
+• Using the -file (file-to-use.txt) command will run the given program and quit upon completion.
+• In our project, the file name is res/commands1.txt
+• The JAR file is saved in res/
+
+
+HOW TO USE THE GUI VIEW:
+
+Run the following from the command line to use the GUI View
+• java -jar Assignment06.jar
+
+• load and save images by clicking the respective buttons at the top
+• loading a new image overrides the current one
+• saving does not affect the state of the image currently on screen
+• buttons on left modify current image
+• each modification is final
+• the histogram automatically updates to reflect the image that the user sees
+• brighten / darken take in a value that represents how much to brighten pixels by
+
+HOW TO USE THE TEXT VIEW:
+
+Run the following from the command line and in the res/ folder to run a preset list of commands
+• java -jar Assignment06.jar -file commands1.txt
+
+Run the following from the command line to use a text view of the program
+• java -jar Assignment06.jar -text
+
+The following commands are supported by our program: (when in text view of the program)
+- Text inside parentheses indicate what the argument to the command should be.
+- Images must be loaded before you can reference them.
+- Entering q or quit will stop the program whenever
+
+load (source-filepath) (name-to-be-referenced-by)
+save (filepath-to-save-to) (name-of-image)
+red-component (name-of-image) (name-of-new-image)
+green-component (name-of-image) (name-of-new-image)
+blue-component (name-of-image) (name-of-new-image)
+value-component (name-of-image) (name-of-new-image)
+intensity-component (name-of-image) (name-of-new-image)
+luma-component (name-of-image) (name-of-new-image)
+flip-vertical (name-of-image) (name-of-new-image)
+flip-horizontal (name-of-image) (name-of-new-image)
+brighten (name-of-image) (name-of-new-image) (brighten-by)
+darken (name-of-image) (name-of-new-image) (darken-by)
+blur (name-of-image) (name-of-new-image)
+sharpen (name-of-image) (name-of-new-image)
+greyscale (name-of-image) (name-of-new-image)
+sepia (name-of-image) (name-of-new-image)
+q
+quit
+
+~EXAMPLE RUN THROUGH~
+
+load res/manhattan.jpg jpg
+load res/manhattan.png png
+load res/manhattan.bmp bmp
+load res/manhattan.ppm ppm
+
+blue-component jpg blue-jpg
+blue-component png blue-png
+blue-component bmp blue-bmp
+blue-component bmp blue-ppm
+
+brighten jpg bright-jpg 100
+brighten png bright-png 100
+brighten bmp bright-bmp 100
+brighten ppm bright-ppm 100
+
+greyscale jpg greyscale-jpg
+greyscale png greyscale-png
+greyscale bmp greyscale-bmp
+greyscale ppm greyscale-ppm
+
+sepia jpg sepia-jpg
+sepia png sepia-png
+sepia bmp sepia-bmp
+sepia ppm sepia-ppm
+
+darken jpg dark-jpg 100
+darken png dark-png 100
+darken bmp dark-bmp 100
+darken ppm dark-ppm 100
+
+flip-horizontal jpg horizontal-jpg
+flip-horizontal png horizontal-png
+flip-horizontal bmp horizontal-bmp
+flip-horizontal ppm horizontal-ppm
+
+flip-vertical jpg vertical-jpg
+flip-vertical png vertical-png
+flip-vertical bmp vertical-bmp
+flip-vertical ppm vertical-ppm
+
+blur jpg blur-jpg
+blur png blur-png
+blur bmp blur-bmp
+blur ppm blur-ppm
+
+sharpen jpg sharp-jpg
+sharpen png sharp-png
+sharpen bmp sharp-bmp
+sharpen ppm sharp-ppm
+
+green-component jpg green-jpg
+green-component png green-png
+green-component bmp green-bmp
+green-component ppm green-ppm
+
+intensity-component jpg intensity-jpg
+intensity-component png intensity-png
+intensity-component bmp intensity-bmp
+intensity-component ppm intensity-ppm
+
+luma-component jpg luma-jpg
+luma-component png luma-png
+luma-component bmp luma-bmp
+luma-component ppm luma-ppm
+
+red-component jpg red-jpg
+red-component png red-png
+red-component bmp red-bmp
+red-component ppm red-ppm
+
+value-component jpg value-jpg
+value-component png value-png
+value-component bmp value-bmp
+value-component ppm value-ppm
+
+save res/commands1-images/ppm.ppm ppm
+save res/commands1-images/ppm.jpg ppm
+save res/commands1-images/ppm.png ppm
+save res/commands1-images/ppm.bmp ppm
+
+save res/commands1-images/png.png png
+save res/commands1-images/png.jpg png
+save res/commands1-images/png.bmp png
+save res/commands1-images/png.ppm png
+
+save res/commands1-images/jpg.png jpg
+save res/commands1-images/jpg.jpg jpg
+save res/commands1-images/jpg.bmp jpg
+save res/commands1-images/jpg.ppm jpg
+
+save res/commands1-images/bmp.bmp bmp
+save res/commands1-images/bmp.png bmp
+save res/commands1-images/bmp.jpg bmp
+save res/commands1-images/bmp.ppm bmp
+
+q
